@@ -15,7 +15,7 @@ scheduler.start()
 
 # Установка учетных данных для доступа к Google API
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-credentials = ServiceAccountCredentials.from_json_keyfile_name('/root/hosting_bot/gugl-428613-22cdedba4515.json', scope)
+credentials = ServiceAccountCredentials.from_json_keyfile_name('', scope)
 client = gspread.authorize(credentials)
 
 # Открытие таблицы с четырьмя листами
@@ -29,7 +29,7 @@ sheet_temp = spreadsheet.worksheet('Временная таблица')
 sheet_results = spreadsheet.worksheet('Результаты')
 
 # Токен
-bot = telebot.TeleBot('7039522673:AAHT3TwC3Y6gdQhKHGYn1H7zsQShLomejKs')
+bot = telebot.TeleBot('')
 
 # Глобальные переменные
 user_data = {}
